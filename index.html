@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prapti Singh Karki | UI/UX Designer</title>
+    <meta name="description" content="Portfolio of Prapti Singh Karki, Junior UI/UX Designer specializing in mobile and web design.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        lavender: { 50: '#f5f3ff', 100: '#ede9fe', 200: '#ddd6fe', 300: '#c4b5fd' },
+                        mint: { 50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac' },
+                        rose: { 50: '#fff1f2', 100: '#ffe4e6', 200: '#fecdd3', 300: '#fda4af' },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.6;
+            animation: float 10s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .delay-1 { animation-delay: 0s; }
+        .delay-2 { animation-delay: 2s; }
+        .delay-3 { animation-delay: 4s; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 20px; }
+    </style>
+</head>
+<body class="font-sans text-slate-600 bg-slate-50 relative overflow-x-hidden selection:bg-rose-100 selection:text-rose-900">
+
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="blob bg-rose-200 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2 delay-1"></div>
+        <div class="blob bg-lavender-200 w-[30rem] h-[30rem] rounded-full top-1/2 right-0 translate-x-1/3 -translate-y-1/2 delay-2"></div>
+        <div class="blob bg-mint-100 w-80 h-80 rounded-full bottom-0 left-20 translate-y-1/3 delay-3"></div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 py-6 px-6 md:px-12">
+        <div class="glass-card max-w-5xl mx-auto rounded-full px-6 py-3 flex justify-between items-center shadow-sm">
+            <a href="#" class="font-serif text-xl tracking-tight font-medium text-slate-800 hover:opacity-70 transition-opacity">Prapti</a>
+            <div class="hidden md:flex gap-8 items-center text-sm font-light tracking-wide">
+                <a href="#about" class="hover:text-rose-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-rose-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-rose-400 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-rose-400 transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="md:hidden text-slate-800">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+            </a>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex flex-col justify-center items-center px-6 relative pt-20">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/50 border border-white shadow-sm text-xs font-medium tracking-wide text-slate-500 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-green-400"></span>
+                Available for new opportunities
+            </div>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-slate-800 leading-[1.1]">
+                Crafting digital <br>
+                <span class="italic text-rose-300">dreams</span> into reality.
+            </h1>
+            <p class="font-light text-lg md:text-xl max-w-xl mx-auto text-slate-500 leading-relaxed">
+                Hi, I'm <strong class="font-medium text-slate-700">Prapti Singh Karki</strong>. A Junior UI/UX Designer dedicated to creating soft, intuitive, and memorable digital experiences.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                <a href="#projects" class="group relative px-8 py-3.5 bg-slate-800 text-white rounded-full overflow-hidden shadow-lg shadow-slate-200 hover:shadow-xl transition-all duration-300">
+                    <span class="relative z-10 text-sm font-medium tracking-wide group-hover:tracking-wider transition-all">View My Work</span>
+                </a>
+                <a href="#contact" class="px-8 py-3.5 bg-white text-slate-700 border border-white rounded-full shadow-sm hover:bg-rose-50 hover:text-rose-500 transition-all duration-300 text-sm font-medium">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
+            <span class="text-xs font-light tracking-widest uppercase">Scroll</span>
+            <iconify-icon icon="solar:arrow-down-linear" width="20"></iconify-icon>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-32 md:space-y-48 pb-32">
+
+        <section id="about" class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative group">
+                <div class="absolute inset-0 bg-lavender-200 rounded-3xl rotate-3 scale-95 group-hover:rotate-1 transition-all duration-500"></div>
+                <div class="relative glass-card rounded-3xl overflow-hidden aspect-[4/5] bg-white">
+                    <img src="Profile.png" alt="Prapti Singh Karki" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div class="space-y-2">
+                    <h2 class="font-serif text-3xl md:text-4xl tracking-tight text-slate-800">About Me</h2>
+                    <div class="w-12 h-1 bg-rose-200 rounded-full"></div>
+                </div>
+                <div class="space-y-6 font-light text-slate-600 leading-loose text-base">
+                    <p>I believe that design is where logic meets emotion. As a Junior UI/UX Designer, I specialize in transforming complex problems into elegant, user-centric solutions. My aesthetic is rooted in minimalism, using pastel tones and generous whitespace to create interfaces that breathe.</p>
+                </div>
+                
+                <div class="pt-4 space-y-4">
+                    <h3 class="font-serif text-xl text-slate-700">Education</h3>
+                    <div class="pl-4 border-l border-lavender-200 space-y-6">
+                        <div class="relative">
+                            <div class="absolute -left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-white border-2 border-lavender-300"></div>
+                            <h4 class="font-medium text-slate-800">Bachelor's in Information Technology</h4>
+                            <p class="text-sm text-slate-500">Aryan School of Engineering • 2025 - 2029</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-white border-2 border-rose-300"></div>
+                            <h4 class="font-medium text-slate-800">High School (+2 Science)</h4>
+                            <p class="text-sm text-slate-500">Ripumardini Sainik Maha Vidhyalaya • 2022 - 2024</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-white border-2 border-mint-300"></div>
+                            <h4 class="font-medium text-slate-800">UI/UX Certification</h4>
+                            <p class="text-sm text-slate-500">Skill Shikshya • 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <a href="PraptiCV.pdf" download="Prapti_Singh_Karki_CV" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-700 border border-slate-100 rounded-2xl shadow-sm hover:bg-lavender-50 hover:text-lavender-500 hover:border-lavender-200 transition-all duration-300 text-sm font-medium">
+                        <iconify-icon icon="solar:download-minimalistic-linear" width="20"></iconify-icon>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="space-y-12">
+            <div class="text-center space-y-4 max-w-2xl mx-auto">
+                <h2 class="font-serif text-3xl md:text-4xl tracking-tight text-slate-800">My Expertise</h2>
+                <p class="font-light text-slate-500">Tools and methodologies I use to bring ideas to life.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-400 mb-6">
+                        <iconify-icon icon="solar:pen-new-square-linear" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="font-serif text-xl mb-4 text-slate-800">Design</h3>
+                    <ul class="space-y-2 text-sm font-light text-slate-600">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-rose-200"></span>User Interface (UI)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-rose-200"></span>User Experience (UX)</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-rose-200"></span>Wireframing</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-lavender-50 rounded-2xl flex items-center justify-center text-lavender-400 mb-6">
+                        <iconify-icon icon="solar:figma-linear" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="font-serif text-xl mb-4 text-slate-800">Tools</h3>
+                    <ul class="space-y-2 text-sm font-light text-slate-600">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-lavender-200"></span>Figma</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-lavender-200"></span>Adobe XD</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-lavender-200"></span>Illustrator</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-mint-50 rounded-2xl flex items-center justify-center text-mint-400 mb-6">
+                        <iconify-icon icon="solar:users-group-rounded-linear" width="28"></iconify-icon>
+                    </div>
+                    <h3 class="font-serif text-xl mb-4 text-slate-800">Research</h3>
+                    <ul class="space-y-2 text-sm font-light text-slate-600">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-mint-200"></span>User Personas</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-mint-200"></span>Usability Testing</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-mint-200"></span>Journey Mapping</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="space-y-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div class="space-y-4">
+                    <h2 class="font-serif text-3xl md:text-4xl tracking-tight text-slate-800">Selected Works</h2>
+                    <p class="font-light text-slate-500 max-w-md">A curation of my recent explorations in mobile and web design.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-3xl aspect-[4/3] bg-rose-50 shadow-sm group-hover:shadow-lg transition-all duration-500 mb-6">
+                        <img src="Project1.png" alt="Project 1" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-serif text-2xl text-slate-800 mb-2 group-hover:text-rose-400 transition-colors">Bloom E-commerce</h3>
+                    <p class="font-light text-slate-500 text-sm mb-3">Mobile App Design • UX Research</p>
+                </article>
+
+                <article class="group cursor-pointer md:mt-16">
+                    <div class="relative overflow-hidden rounded-3xl aspect-[4/3] bg-lavender-50 shadow-sm group-hover:shadow-lg transition-all duration-500 mb-6">
+                        <img src="Project2.png" alt="Project 2" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-serif text-2xl text-slate-800 mb-2 group-hover:text-lavender-400 transition-colors">Serenity Finance</h3>
+                    <p class="font-light text-slate-500 text-sm mb-3">Web Dashboard • Prototyping</p>
+                </article>
+                <article class="group cursor-pointer md:mt-16">
+                    <div class="relative overflow-hidden rounded-3xl aspect-[4/3] bg-lavender-50 shadow-sm group-hover:shadow-lg transition-all duration-500 mb-6">
+                        <img src="Project3.png" alt="Project 2" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-serif text-2xl text-slate-800 mb-2 group-hover:text-lavender-400 transition-colors">XYZ XYZ</h3>
+                    <p class="font-light text-slate-500 text-sm mb-3">Web Dashboard • Prototyping</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="py-8">
+            <h3 class="font-serif text-2xl text-slate-800 mb-8">Certifications</h3>
+            <div class="flex flex-wrap gap-4">
+                <div class="glass-card px-6 py-4 rounded-2xl flex items-center gap-4 hover:shadow-md transition-shadow cursor-default">
+                    <iconify-icon icon="solar:diploma-verified-linear" class="text-rose-300" width="24"></iconify-icon>
+                    <div>
+                        <p class="text-sm font-medium text-slate-700">UI/UX Design</p>
+                        <p class="text-xs text-slate-400">Skill Shikshya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="max-w-4xl mx-auto">
+            <div class="glass-card rounded-[2.5rem] p-8 md:p-16 relative overflow-hidden text-center">
+                <h2 class="font-serif text-3xl md:text-5xl tracking-tight text-slate-800 mb-4">Let's create together</h2>
+                <p class="font-light text-slate-500 mb-12">Have a project in mind or just want to say hi?</p>
+                
+                <form class="space-y-6 max-w-lg mx-auto">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Name" class="w-full bg-white border border-slate-100 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-rose-200">
+                        <input type="email" placeholder="Email" class="w-full bg-white border border-slate-100 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-rose-200">
+                    </div>
+                    <textarea rows="4" placeholder="Your Message" class="w-full bg-white border border-slate-100 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-rose-200 resize-none"></textarea>
+                    <button type="button" class="bg-slate-800 text-white px-8 py-3 rounded-full shadow-lg hover:-translate-y-1 transition-all">Send Message</button>
+                </form>
+
+                <div class="mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center text-sm font-light text-slate-500">
+                    <p>&copy; 2026 Prapti Singh Karki</p>
+                    <div class="flex gap-6">
+                        <a href="https://www.linkedin.com/in/prapti-karki-291794368/" target="_blank" class="hover:text-rose-400">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
